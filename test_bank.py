@@ -12,3 +12,9 @@ def test_value_small():
     assert value('whatdoyoumean????') == 100
     assert value('howis this possible?!!') == 20
     assert value('hello to the unknown') == 0
+
+def test_numbers():
+    assert value('213982038529547') == 100
+
+def test_punct():
+    assert value('!@#$%^&*()_+-=') == 100
