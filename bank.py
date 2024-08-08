@@ -1,11 +1,11 @@
 def main():
-    greeting = input("Greeting: ").strip().casefold()
+    greeting = input("Greeting: ")
     print(f'${value(greeting)}')
 
 def value(greeting):
-    if greeting.startswith('hello'):
+    if greeting.strip().casefold().startswith('hello'):
         return 0
-    elif greeting.startswith('h'):
+    elif greeting.strip().casefold().startswith('h'):
         return 20
     else:
         return 100
